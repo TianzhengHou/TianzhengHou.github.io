@@ -48,6 +48,8 @@ header h1 {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    display: block; /* Make the anchor tag fill the entire list item */
+    padding: 15px 20px;
 }
 
 .nav-links li a:hover {
@@ -56,7 +58,7 @@ header h1 {
 
 /* Hero section styles */
 .hero {
-    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    background: url(1500x500.jpeg) no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
@@ -145,7 +147,13 @@ header h1 {
     margin-bottom: 30px;
 }
 
-.contact form {
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* .contact form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -172,7 +180,7 @@ header h1 {
 
 .contact button:hover {
     background-color: #FFD700;
-}
+} */
 
 /* Footer styles */
 footer {
@@ -181,4 +189,31 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
