@@ -41,15 +41,15 @@ header h1 {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    display: block; /* Make the anchor tag fill the entire list item */
-    padding: 15px 20px;
+    display: block;
+    padding: 15px;
 }
 
 .nav-links li a:hover {
@@ -58,7 +58,7 @@ header h1 {
 
 /* Hero section styles */
 .hero {
-    background: url(1500x500.jpeg) no-repeat center center/cover;
+    background: url(img/1500x500.jpeg) no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
@@ -131,26 +131,76 @@ header h1 {
     font-size: 16px;
 }
 
+.read-more {
+    color: #007BFF; /* Blue color for light mode */
+    font-weight: 600; /* Slightly bolder */
+    text-decoration: none; /* Remove underline by default */
+    padding: 4px 8px; /* Add some padding around the text */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links in light mode */
+.read-more:hover {
+    color: #ffffff; /* White color on hover for contrast */
+    background-color: #007BFF; /* Highlight background on hover */
+    text-decoration: none; /* No underline */
+}
+
+/* Active/focus state for light mode */
+.read-more:active, .read-more:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom outline */
+}
+
 /* Contact section styles */
 .contact {
-    padding: 50px 0;
-    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background color for light mode */
+    color: #333; /* Dark color for text in light mode */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact h2 {
-    font-size: 30px;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 .contact-list {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-list a {
+    color: #007BFF; /* Bright blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+.contact-list a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+.contact-list strong {
+    font-weight: bold;
 }
 
 /* .contact form {
@@ -196,10 +246,11 @@ footer {
     display: none; /* Hidden by default */
     position: absolute;
     background-color: #444;
-    min-width: 160px;
+    min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 10px;
+    list-style: none;
+    /* margin-top: 10px; */
 }
 
 .dropdown-content a {
@@ -217,3 +268,4 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+

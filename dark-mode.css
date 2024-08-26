@@ -1,0 +1,189 @@
+/* Toggle Button Styles */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Add sun and moon icons to the slider */
+.slider:before {
+    content: "☀️"; /* Sun emoji */
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    transition: 0.4s;
+    font-size: 14px; /* Adjust size if needed */
+}
+
+.slider:after {
+    content: "🌙"; /* Moon emoji */
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    transition: 0.4s;
+    font-size: 14px; /* Adjust size if needed */
+    opacity: 0; /* Start hidden */
+}
+
+input:checked + .slider:before {
+    opacity: 0; /* Hide the sun when in dark mode */
+}
+
+input:checked + .slider:after {
+    opacity: 1; /* Show the moon when in dark mode */
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Other dark mode styles as needed */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background: #1a1a1a;
+}
+
+body.dark-mode .nav-links li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .nav-links li a:hover {
+    color: #FFD700;
+}
+
+body.dark-mode .hero {
+    background: url(img/1500x500-dark.jpeg) no-repeat center center/cover;
+    color: #e0e0e0;
+}
+
+body.dark-mode .about, 
+body.dark-mode .portfolio, 
+body.dark-mode .contact, 
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .portfolio-item {
+    background: #333;
+}
+
+body.dark-mode .dropdown-content {
+    background-color: #333;
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background-color: #444;
+}
+
+
+/* General dark mode styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #1e1e1e; /* Dark background for header and footer */
+    color: #ffffff;
+}
+
+.nav-links li a.dark-mode {
+    color: #ffffff; /* Light text color for navigation links */
+}
+
+/* Additional dark mode styles for other elements */
+.hero.dark-mode {
+    background-color: #333333;
+}
+
+.about.dark-mode, .portfolio.dark-mode, .contact.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* Dark mode styles for dropdown */
+.dropdown-content.dark-mode {
+    background-color: #333;
+}
+
+.dropdown-content a.dark-mode {
+    color: white;
+}
+
+.dropdown-content a:hover.dark-mode {
+    background-color: #555;
+}
+/* General link styles for dark mode */
+body.dark-mode .read-more {
+    color: #FFD700; /* Bright gold color for dark mode */
+    font-weight: 600; /* Slightly bolder */
+    text-decoration: none; /* Remove underline by default */
+    padding: 4px 8px; /* Add some padding around the text */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links in dark mode */
+body.dark-mode .read-more:hover {
+    color: #333; /* Darker color on hover for contrast */
+    background-color: #FFD700; /* Highlight background on hover */
+    text-decoration: none; /* No underline */
+}
+
+/* Active/focus state for dark mode */
+body.dark-mode .read-more:active, 
+body.dark-mode .read-more:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5); /* Custom outline */
+}
+
+/* Dark mdoe contact*/
+body.dark-mode .contact {
+    background-color: #1a1a1a; /* Dark background color for dark mode */
+    color: #e0e0e0; /* Light color for text in dark mode */
+}
+
+body.dark-mode .contact-list a {
+    color: #FFD700; /* Gold color for links in dark mode */
+}
+
+body.dark-mode .contact-list a:hover {
+    color: #FFD700; /* Maintain gold color on hover */
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+body.dark-mode .contact-list strong {
+    color: #e0e0e0; /* Light color for labels in dark mode */
+}
