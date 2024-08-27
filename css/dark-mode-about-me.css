@@ -1,0 +1,25 @@
+body.dark-mode .skills-list li {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .education, 
+body.dark-mode .rewards, 
+body.dark-mode .interests, 
+body.dark-mode .skills {
+    background-color: #1a1a1a; /* Dark background color for sections */
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .about h2,
+body.dark-mode .education h2, 
+body.dark-mode .rewards h2, 
+body.dark-mode .interests h2, 
+body.dark-mode .skills h2{
+    color: #FFD700; /* Gold color for section headings */
+}
+
+body.dark-mode .education p, 
+body.dark-mode .rewards p, 
+body.dark-mode .interests p {
+    color: #e0e0e0; /* Light color for text */
+}

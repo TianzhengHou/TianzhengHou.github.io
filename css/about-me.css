@@ -1,0 +1,118 @@
+.image-container {
+    flex: 0 0 30%; 
+}
+
+.image-container img {
+    margin-top: 6pc;
+    width: 100%; /* Makes the image responsive */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+}
+
+/* Adjust about paragraph spacing */
+.about{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto; /* Added margin for better spacing between paragraphs */
+}
+
+.education, .rewards, .interests {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* Interests list */
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Main content and skills container */
+.main-content-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the start of the cross axis */
+    justify-content: space-between; /* Spaces items out */
+    gap: 20px; /* Adds some space between the columns */
+}
+
+/* Main content section */
+.main-content {
+    flex: 1;
+    margin-left: 15%;
+    max-width: 70%; /* Optional: Sets a maximum width */
+}
+
+/* Skills section */
+.skills {
+    flex: 0 0 30%; /* Fixed width for the skills section */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 6pc;
+}
+
+/* Skills section styles */
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    gap: 10px; /* Adds space between list items */
+}
+
+.skills-list li {
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+
+    .main-content{
+        margin-left: 0px;
+        margin-top: 0px;
+        max-width: 100%; /*Allows sections to take full width on smaller screens */
+        flex: 1; /* Ensures both sections grow equally */
+    }
+
+    .skills{
+        margin-top: 0px;
+        min-width: 90%;
+    }
+
+    .image-container {
+        flex: 0 0 30%; /* Fixed width for the image container */
+    }
+    
+    .image-container img {
+        margin-top: 6pc;
+        width: 100%; /* Makes the image responsive */
+        border-radius: 8px; /* Optional: Adds rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+    }
+}

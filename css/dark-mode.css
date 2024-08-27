@@ -1,3 +1,6 @@
+body.dark-mode .logo {
+    color: #FFD700;
+}
 /* Toggle Button Styles */
 .theme-switch-wrapper {
     display: flex;
