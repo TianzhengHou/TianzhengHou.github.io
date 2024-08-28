@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viktor Hou - Personal Website</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="../css/dark-mode.css" id="dark-mode-stylesheet">
+    <link rel="stylesheet" href="../css/dark-mode-project.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -17,17 +19,18 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <h1>Viktor Hou</h1>
+                    <h1>Artificial Intelligence</h1>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../file/ViktorResume.pdf" target="_blank">Resume</a></li>
                     <li class="dropdown">
                         <a href="#select-more">More</a>
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-content">
-                            <li><a href="#link1">Link 1</a></li>
-                            <li><a href="#link2">Link 2</a></li>
-                            <li><a href="#link3">Link 3</a></li>
+                            <li><a href="about-me.html">About Me</a></li>
+                            <li><a href="#Link2">Link2</a></li>
+                            <li><a href="#Link3">Link3</a></li>
                         </ul>
                     </li>
                     <div class="theme-switch-wrapper">
@@ -41,7 +44,55 @@
         </nav>
     </header>
 
-    
+     <!-- Main Content Section -->
+     <main class="container">
+        <!-- About Section -->
+        <section class="about">
+            <div class="main-content-container">
+                <!-- Main content -->
+                <div class="about">
+                    <h2>About the Project</h2>
+                    <p>This project demonstrates my learning and application of basic Artificial Intelligence concepts using Python, with a particular focus on leveraging NumPy for building various machine learning models. Each script is designed to explore different algorithms and methods covered during my coursework at Dalhousie University.</p>
+                    <p>My interest in AI stems from a deep curiosity about how machines learn and make decisions. You can learn more about my background and interests on the <a href="about-me.html">About Me</a> page.</p>
+                    <a href="https://github.com/TianzhengHou/Artificial-Intelligence">Link To Project >></a>
+                </div>
+                <!-- Image container -->
+                <div class="image-container">
+                    <img src="../img/ai-project.jpg" alt="Project Overview Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="project-details">
+            <h2>Project Highlights</h2>
+            <p>Below are some key projects that highlight different aspects of my work in Artificial Intelligence and Python programming:</p>
+            
+            <!-- Project List -->
+            <ul class="project-list">
+                <li>
+                    <h3>Clustering with Python</h3>
+                    <p>In this project, I implemented various clustering algorithms such as K-Means and hierarchical clustering to analyze and segment data points. The goal was to learn how unsupervised learning can be used to discover patterns in data without prior labels.</p>
+                </li>
+                <li>
+                    <h3>K-Nearest Neighbors (KNN) Algorithm</h3>
+                    <p>This project involved building a K-Nearest Neighbors classifier from scratch. The KNN algorithm is a simple, yet powerful tool for classification, particularly useful in situations where the decision boundary is non-linear.</p>
+                </li>
+                <li>
+                    <h3>Linear Regression Model</h3>
+                    <p>I developed a linear regression model to predict continuous outcomes based on input features. This project helped solidify my understanding of regression analysis and the underlying mathematics of gradient descent.</p>
+                </li>
+                <li>
+                    <h3>Stochastic Neural Network</h3>
+                    <p>This neural network model incorporates stochastic elements to better capture the randomness inherent in certain types of data. The stochastic approach is particularly useful in modeling non-deterministic processes where outcomes can vary.</p>
+                </li>
+                <li>
+                    <h3>Tic-Tac-Toe with Reinforcement Learning</h3>
+                    <p>In this reinforcement learning project, the model learns to play Tic-Tac-Toe by exploring different strategies and learning from outcomes. The project showcases how reinforcement learning can be used to develop intelligent agents that improve through experience.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>

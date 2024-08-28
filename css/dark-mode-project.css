@@ -1,0 +1,55 @@
+body.dark-mode {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+body.dark-mode .about,
+body.dark-mode .project-details {
+    background-color: #1a1a1a; /* Dark background color for sections */
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .about h2,
+body.dark-mode .project-details h2 {
+    color: #FFD700; /* Gold color for section headings */
+}
+
+body.dark-mode .project-list li h3 {
+    color: #FFD700; /* Gold color for project titles */
+}
+
+body.dark-mode .project-list p {
+    color: #e0e0e0; /* Light color for project descriptions */
+}
+
+body.dark-mode .image-container img {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow for image */
+}
+
+body.dark-mode .nav-links li a {
+    color: #e0e0e0; /* Light color for nav links */
+}
+
+body.dark-mode .nav-links li a:hover {
+    color: #FFD700; /* Gold color for hovered nav links */
+}
+
+body.dark-mode .footer {
+    background-color: #1a1a1a; /* Dark background for the footer */
+    color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .about a {
+    color: #FFD700; /* Bright gold color for dark mode */
+    font-weight: 600; /* Slightly bolder */
+    text-decoration: none; /* Remove underline by default */
+    padding: 4px 8px; /* Add some padding around the text */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+body.dark-mode .about a:hover {
+    color: #333; /* Darker color on hover for contrast */
+    background-color: #FFD700; /* Highlight background on hover */
+    text-decoration: none; /* No underline */
+}

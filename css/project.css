@@ -1,0 +1,62 @@
+/* General styles for the main content and image container */
+.main-content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px; /* Adjusted for better spacing */
+}
+
+.main-content {
+    flex: 1;
+    max-width: 60%; /* Adjusted for improved layout */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.image-container {
+    flex: 0 0 50%; /* Adjusted width */
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.about a {
+    color: #007BFF; /* Blue color for light mode */
+    font-weight: 600; /* Slightly bolder */
+    text-decoration: none; /* Remove underline by default */
+    padding: 4px 8px; /* Add some padding around the text */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.about a:hover {
+    color: #ffffff; /* White color on hover for contrast */
+    background-color: #007BFF; /* Highlight background on hover */
+    text-decoration: none; /* No underline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center; /* Center aligns content */
+    }
+
+    .main-content, .image-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
