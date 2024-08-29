@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Hou - Information Retrieval</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css" id="dark-mode-stylesheet">
+    <link rel="stylesheet" href="../../css/dark-mode-project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Information Retrieval</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../file/ViktorResume.pdf" target="_blank">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="#select-more">More</a>
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-content">
+                            <li><a href="../about-me.html">About Me</a></li>
+                            <li><a href="../more-project.html">More Projects</a></li>
+                            <li><a href="../blogs.html">My Blog</a></li>
+                        </ul>
+                    </li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <!-- About Section -->
+        <section class="about">
+            <div class="main-content-container">
+                <!-- Main content -->
+                <div class="about">
+                    <h2>About the Repository</h2>
+                    <p>This repository showcases my work on Information Retrieval algorithms, which I studied at Dalhousie University. It includes various scripts that implement different retrieval methods, focusing on optimizing search efficiency and accuracy.</p>
+                    <p>The repository reflects my interest in how information can be systematically indexed, retrieved, and processed to deliver relevant search results. You can learn more about my background and interests on the <a href="../about-me.html">About Me</a> page.</p>
+                    <a href="https://github.com/TianzhengHou/InformationRetrieval">Link To Repository >></a>
+                </div>
+                <!-- Image container -->
+                <div class="image-container">
+                    <img src="../../img/ir-project.jpg" alt="Repository Overview Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="project-details">
+            <h2>Repository Files</h2>
+            <p>The repository contains several Python scripts, each focusing on a different aspect of Information Retrieval:</p>
+            
+            <!-- Project List -->
+            <ul class="project-list">
+                <li>
+                    <h3>BooleanSearch.py</h3>
+                    <p>This script implements a Boolean search algorithm using a faster term index matrix. It provides an efficient way to retrieve documents that match a specific set of keywords.</p>
+                </li>
+                <li>
+                    <h3>DataCleaning.py</h3>
+                    <p>The DataCleaning script preprocesses text data by removing noise, punctuation, and stop words, which helps improve the accuracy of retrieval algorithms.</p>
+                </li>
+                <li>
+                    <h3>InvertedIndexSearch.py</h3>
+                    <p>This script develops an inverted index-based search engine, allowing for quick lookup of documents containing specific terms. The inverted index is a fundamental data structure for text retrieval systems.</p>
+                </li>
+                <li>
+                    <h3>TermDocumentIncidenceMatrix.py</h3>
+                    <p>It computes a term-document incidence matrix, which represents the presence or absence of terms across a set of documents. This matrix is a key component in building search engines.</p>
+                </li>
+                <li>
+                    <h3>Text_to_Image_search_Transformer.py</h3>
+                    <p>This script utilizes OpenAI's CLIP model to implement a text-to-image search transformer, allowing for searching images based on textual descriptions.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Victor Hou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../javascript/dark-mode-toggle.js"></script>
+</body>
+</html>

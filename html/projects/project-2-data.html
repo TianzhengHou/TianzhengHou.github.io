@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Hou - Data Science Projects</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css" id="dark-mode-stylesheet">
+    <link rel="stylesheet" href="../../css/dark-mode-project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Data Science</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../file/ViktorResume.pdf" target="_blank">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="#select-more">More</a>
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-content">
+                            <li><a href="../about-me.html">About Me</a></li>
+                            <li><a href="../more-project.html">More Projects</a></li>
+                            <li><a href="../blogs.html">My Blog</a></li>
+                        </ul>
+                    </li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <!-- About Section -->
+        <section class="about">
+            <div class="main-content-container">
+                <!-- Main content -->
+                <div class="about">
+                    <h2>About the Repository</h2>
+                    <p>This repository showcases various Data Science projects and assignments focused on leveraging statistical analysis, machine learning, and data preprocessing techniques to extract insights from the Car Features and MSRP dataset and other related datasets. The work was conducted as part of my studies at Dalhousie University, aimed at solving practical business problems in the automotive industry and beyond.</p>
+                    <p>You can learn more about my data science journey and projects on the <a href="../about-me.html">About Me</a> page.</p>
+                    <a href="https://github.com/TianzhengHou/DataScience">Link To Repository >></a>
+                </div>
+                <!-- Image container -->
+                <div class="image-container">
+                    <img src="../../img/ds-project.jpg" alt="Data Science Project Overview Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="project-details">
+            <h2>Repository Projects and Notebooks</h2>
+            <p>The repository contains several Jupyter Notebooks, each focusing on different data science techniques and methodologies:</p>
+            
+            <!-- Project List -->
+            <ul class="project-list">
+                <li>
+                    <h3>ClassificationTreeAndSVMClassifier.ipynb</h3>
+                    <p>This notebook explores decision tree classifiers and support vector machines (SVM) for predictive modeling. It includes the mathematical formulation of entropy, information gain, and the process of hyperparameter tuning for optimal model performance.</p>
+                </li>
+                <li>
+                    <h3>DataPreprocessAndCRISP_DM.ipynb</h3>
+                    <p>This notebook covers data preprocessing and follows the CRISP-DM methodology. It includes data cleaning, exploratory data analysis (EDA), and feature engineering to prepare the dataset for modeling.</p>
+                </li>
+                <li>
+                    <h3>RandomForest_Adaboost_Hyperparameter_Tuning.ipynb</h3>
+                    <p>This notebook implements Random Forest and AdaBoost algorithms with a focus on hyperparameter tuning to enhance model accuracy and robustness. It also compares the performance of these models using various evaluation metrics.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Additional Details Section -->
+        <section class="project-details">
+            <h2>Key Concepts and Techniques</h2>
+            <p>Here are some of the key concepts and techniques covered in the repository:</p>
+            
+            <ul class="project-list">
+                <li>
+                    <h3>Business Understanding and Problem Formulation</h3>
+                    <p>Identifying a business problem that can be addressed using the Car Features and MSRP dataset. This involves understanding the stakeholders' needs and how insights derived from the data can provide actionable benefits to stakeholders in the automotive industry. Proposing multiple data science solutions and assessing their feasibility to select the most effective approach for the final analysis.</p>
+                </li>
+                <li>
+                    <h3>Data Exploration and Feature Engineering</h3>
+                    <p>Conducting a comprehensive exploratory data analysis (EDA) to gain a deep understanding of the dataset's structure, distributions, and relationships. This includes advanced visualizations like pair plots, correlation heatmaps, and statistical summaries to identify anomalies or patterns. Transforming categorical variables into numerical formats using one-hot encoding and label encoding, and discussing the advantages and disadvantages of each approach. Designing features that capture essential domain concepts to enhance model accuracy.</p>
+                </li>
+                <li>
+                    <h3>Entropy, Information Gain, and Decision Trees</h3>
+                    <p>Calculating entropy to measure the uncertainty or impurity in the data and using information gain to determine the most informative features for splitting nodes in a decision tree. Understanding the biases of information gain towards features with many values and mitigating this using the Information Gain Ratio. Building decision tree classifiers and applying pruning techniques such as cost complexity pruning to optimize model performance while preventing overfitting.</p>
+                </li>
+                <li>
+                    <h3>Logistic Regression and Support Vector Machines (SVM)</h3>
+                    <p>Implementing logistic regression models to estimate probabilities and make binary classifications. Performing a detailed analysis of logistic regression, including the mathematical derivation of the cost function and the optimization process using gradient descent. Using Support Vector Machines (SVM) to find the optimal hyperplane that maximizes the margin between different classes. Exploring different kernels (linear, polynomial, RBF) and tuning hyperparameters to enhance model performance.</p>
+                </li>
+                <li>
+                    <h3>Ensemble Methods: Random Forest and AdaBoost</h3>
+                    <p>Leveraging ensemble learning techniques like Random Forest and AdaBoost to improve model accuracy and robustness. Understanding the mechanisms of Random Forests, such as bootstrapping and feature randomness, to create diverse trees and reduce overfitting. Applying AdaBoost to combine multiple weak classifiers into a strong classifier by focusing on hard-to-classify examples. Conducting hyperparameter tuning using grid search or random search to optimize model parameters.</p>
+                </li>
+                <li>
+                    <h3>Dimensionality Reduction Techniques</h3>
+                    <p>Applying dimensionality reduction techniques like Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and Linear Discriminant Analysis (LDA) to reduce the dataset's dimensionality while preserving its structure and variance. Discussing the use cases for each technique, such as PCA for general variance preservation, t-SNE for visualizing high-dimensional data, and LDA for maximizing class separability in classification tasks.</p>
+                </li>
+                <li>
+                    <h3>Model Evaluation and Performance Metrics</h3>
+                    <p>Evaluating model performance using various metrics, including accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrix. Understanding the importance of selecting the right metrics based on the problem context, especially in cases of imbalanced datasets like credit card fraud detection. Visualizing model performance through ROC curves, precision-recall curves, and other plots to assess the trade-offs between different models and their suitability for specific applications.</p>
+                </li>
+                <li>
+                    <h3>Cost-Sensitive Learning and Imbalance Handling</h3>
+                    <p>Implementing cost-sensitive learning techniques to address class imbalances and minimize misclassification costs in datasets like the Statlog (Heart) and credit card fraud detection datasets. Using cost matrices and probability calibration methods such as isotonic regression to adjust model predictions based on the cost of errors. Applying synthetic oversampling methods like SMOTE and undersampling techniques like NearMiss to balance the dataset and improve model performance.</p>
+                </li>
+                <li>
+                    <h3>Hyperparameter Tuning and Model Optimization</h3>
+                    <p>Performing hyperparameter tuning using techniques such as Grid Search and Random Search to find the optimal set of parameters that enhance model performance. Utilizing cross-validation to ensure that the models generalize well to unseen data and to avoid overfitting during the tuning process. Analyzing the impact of different hyperparameters on model performance and using visualization techniques to understand their effects.</p>
+                </li>
+                <li>
+                    <h3>Model Interpretation and Feature Importance</h3>
+                    <p>Interpreting models and understanding feature importance using methods like feature importance scores in Random Forests and coefficients in logistic regression. Visualizing feature importances to identify the most influential features in the dataset and understanding their impact on model predictions. Conducting error analysis to pinpoint areas where the model predictions diverge significantly from actual values, helping refine feature engineering and model training processes.</p>
+                </li>
+                <li>
+                    <h3>Advanced Machine Learning Techniques</h3>
+                    <p>Exploring advanced machine learning techniques like stacking ensemble models, where multiple models are combined to leverage their strengths and improve overall performance. Understanding the theoretical foundation and practical implementation of different ensemble methods, including boosting, bagging, and stacking, and analyzing their computational complexity, interpretability, and applicability to various types of datasets and problems.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viktor Hou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../javascript/dark-mode-toggle.js"></script>
+</body>
+</html>

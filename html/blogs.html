@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Hou - Blog Selection</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-mode.css" id="dark-mode-stylesheet">
+    <link rel="stylesheet" href="../css/about-me.css" id="about-me-stylesheet">
+    <link rel="stylesheet" href="../css/dark-mode-about-me.css" id="dark-mode-about-me-stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>My Blogs</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../file/ViktorResume.pdf" target="_blank">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="#select-more">More</a>
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-content">
+                            <li><a href="about-me.html">About Me</a></li>
+                            <li><a href="more-project.html">More Projects</a></li>
+                            <li><a href="blogs.html">My Blog</a></li>
+                        </ul>
+                    </li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog Posts</h2>
+            <div class="blog-items">
+                <div class="blog-item">
+                    <h3>Understanding Machine Learning</h3>
+                    <p>An introductory guide to understanding the basics of machine learning and its applications in modern technology.</p>
+                    <a href="html/blogs/blog-1-machine-learning.html" class="read-more">Read More >></a>
+                </div>
+                <div class="blog-item">
+                    <h3>Data Science Best Practices</h3>
+                    <p>Learn about the best practices for data science projects, including data cleaning, visualization, and model selection.</p>
+                    <a href="html/blogs/blog-2-data-science.html" class="read-more">Read More >></a>
+                </div>
+                <div class="blog-item">
+                    <h3>Information Retrieval Techniques</h3>
+                    <p>An overview of various information retrieval techniques and their importance in search engines and data mining.</p>
+                    <a href="html/blogs/blog-3-info-retrieval.html" class="read-more">Read More >></a>
+                </div>
+                <div class="blog-item">
+                    <h3>Agile Project Management in Tech</h3>
+                    <p>Explore the principles of Agile Project Management and how they can be applied to tech projects to improve efficiency and collaboration.</p>
+                    <a href="html/blogs/blog-4-agile-management.html" class="read-more">Read More >></a>
+                </div>
+                <div class="blog-item">
+                    <h3>Game Development Essentials</h3>
+                    <p>Tips and tricks for aspiring game developers, including an overview of popular game engines and development workflows.</p>
+                    <a href="html/blogs/blog-5-game-development.html" class="read-more">Read More >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viktor Hou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script src="../javascript/dark-mode-toggle.js"></script>
+</body>
+
+</html>
